@@ -1,0 +1,255 @@
+:root {
+   --web_color: #4D5AE5;
+    --studio_color:#2E2F42;
+    --list_color: #434455; 
+    --team_color: #F4F4FD; 
+    --link_color: #2E2F42;
+    --white_color: #fff;
+    --border_color: #E7E9FC;
+}
+ 
+ 
+ html {
+   box-sizing: border-box;
+ }
+ 
+ *,
+ *::before,
+ *::after {
+   box-sizing: inherit;
+}
+ 
+ 
+body {
+   font-family: 'Roboto', sans-serif;
+} 
+
+
+ul {
+   margin: 0;
+   padding: 0;
+}
+.header {
+   border-bottom: 1px solid var(--border_color);
+}
+.container {
+   width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+
+
+.main-nav {
+   display: flex;
+   align-items: center;
+   background-color: var(--white_color);
+}
+   
+
+.nav-logo, .footer__header {
+   font-family: 'Raleway';
+   font-weight: 800;
+   font-size: 18px;
+   line-height: 1.3;
+   text-decoration: none; 
+   text-transform: uppercase;
+}
+
+.web {
+   color: var(--web_color);
+}
+
+.studio {
+   color: var(--studio_color);
+}
+.studio-footer {
+   color: var(--team_color);
+}
+
+.list {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+.site-nav {
+   display: flex; 
+   margin-left: 70px;
+}
+.site-nav .item{
+   margin-right: 70px;
+}
+
+.site-nav .item:last-child {
+   margin-right: 0;
+}
+.site-nav li {
+   text-decoration: none;
+}
+
+.address-nav {
+   display: flex;
+   margin-left: auto;
+}
+
+.address-nav li {
+   text-decoration: none;
+}
+
+.address-nav .item + .item {
+   margin-left: 40px;
+}
+
+.site-nav .nav__link {
+   display: block;
+   text-decoration: none;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.33;
+   color: var(--studio_color);
+   padding-top: 21px;
+   padding-bottom: 21px;
+}
+
+.nav__link:hover {
+   color: var(--web_color);
+}
+
+.address-nav .address__link {
+   display: block;
+   text-decoration: none;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.33;
+   color: var(--list_color);
+   padding-top: 21px;
+   padding-bottom: 21px;
+}
+
+.address__link:hover {
+   color: var(--web_color);
+}
+
+.section {
+   padding-top: 120px;
+   padding-bottom: 120px;
+}
+
+.section__list {
+   display: flex;
+   justify-content: center;
+}
+
+
+.section__list-items {
+   list-style: none;
+
+}
+
+.btn {
+   background-color: var(--team_color);
+   border-radius: 4px;
+   border: 1px solid var(--border_color);
+   padding: 12px 24px;
+   font-family: inherit;
+   font-weight: 500;
+   font-size: 16px;
+   text-align: center;
+   cursor: pointer;
+   color: var(--web_color);
+   margin-right: 24px;
+ }
+ 
+ .btn:hover {
+    background-color: var(--web_color);
+    color: var(--white_color);
+ }
+ 
+
+ 
+ .visually-hidden {
+    position: position;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0 );
+    clip-path: inset(50%);
+    margin: -1px;
+ }
+
+
+
+   
+
+
+.section__list {
+   margin: 0;
+   margin-bottom: 72px;
+}
+
+.information {
+   background-color: var(--white_color);
+   padding-left: 16px;
+   padding-right: 16px;
+   padding-top: 32px;
+   padding-bottom: 32px;
+   border-bottom: 1px solid var(--border_color) ;
+   border-left: 1px solid var(--border_color) ;
+   border-right: 1px solid var(--border_color) ;
+}
+
+.section__header {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 1.8;
+   color: var(--link_color);
+   margin: 0;
+   margin-bottom: 4px;
+}
+
+.section__text {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.7;
+   margin: 0;
+   color: var(--list_color);
+}
+.section__list-img {
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-bottom: -30px;
+}
+
+.link__img {
+   margin-bottom: 30px;
+}
+
+
+.footer { 
+   background-color: var(--studio_color);
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+
+
+.footer__address {
+   font-style: normal;
+   margin-top: 16px;
+}
+
+.footer__text {
+   width: 264px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: 0.02em;
+   color: var(--border_color);
+   margin: 0;
+}
