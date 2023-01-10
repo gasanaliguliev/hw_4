@@ -6,6 +6,10 @@
     --link_color: #2E2F42;
     --white_color: #fff;
     --border_color: #E7E9FC;
+    --hover_color: #404bbf;
+    --client_color: #8e8f99;
+    --green-color:#31D0AA;
+
 }
 
 
@@ -29,9 +33,11 @@ body {
 ul {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
+
 .container {
-    width: 1158px;
+    width: 1128px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -107,7 +113,7 @@ ul {
     color: var(--studio_color);
     padding-top: 21px;
     padding-bottom: 21px;
- }
+}
  
  .nav__link:hover {
     color: var(--web_color);
@@ -144,11 +150,13 @@ ul {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
     ),
-    url(./images/people-office\ 1.jpg);
+    url(./images/people-office_1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
+
+
 
 .section__header {
     width: 494px;
@@ -180,6 +188,10 @@ ul {
     cursor: pointer;
 }
 
+.button:hover {
+    background-color: var(--hover_color);
+}
+
 
 
 .section__list-features {
@@ -197,14 +209,21 @@ ul {
 }
 
 
-. ::before {
-    display: block;
-    content: "";
+.icon-vector{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 112px;
     background-color: var(--team_color);
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.vector {
+    fill: var(--link_color);
 }
 
 
@@ -261,25 +280,42 @@ ul {
     gap: 24px;
 }
 
+
+.section__list-team .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
 .section__list-team .social-item {
     width: 40px;
     height: 40px;
     background-color: var(--web_color);
-    border-radius: 50px;
-    margin-right: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
 }
 
-.social-link {
+.section__list-team .social-item:hover,
+.section__list-team .social-item:focus {
+    background-color: var(--hover_color);
+}
+
+
+.section__list-team .social-item:last-child {
+    margin-right: 0;
+}
+
+.section__list-team .social-link {
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    fill: var(--team_color);
 }
 
-.social-icon{
-    color: var(--white_color);
-}
+
+
 
 
 .section__link-team {
@@ -364,7 +400,46 @@ ul {
     color: var(--list_color);
 }
 
+.section__client-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--studio_color);
+    margin: 0;
+    margin-top: 130px;
+}
 
+.section__list-client {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-top: 72px;
+    margin-bottom: 120px;
+}
+
+
+
+.section__link-client {
+    border: 1px solid var(--client_color);
+    border-radius: 4px;
+    margin-right: 24px;
+    padding: 16px 32px;
+}
+
+.section__link-client:last-child {
+    margin-right: 0;
+}
+
+.section__link-client .link-client {
+    fill: var(--client_color);
+}
+
+.section__link-client:hover {
+    color: var(--hover_color);
+}
 
 
 .footer { 
@@ -373,19 +448,62 @@ ul {
     padding-bottom: 100px;
  }
  
- 
- .footer__address {
-    font-style: normal;
-    margin-top: 16px;
+ .footer-content {
+    display: flex;
  }
  
  .footer__text {
     width: 264px;
- font-weight: 400;
- font-size: 16px;
- line-height: 24px;
- letter-spacing: 0.02em;
- color: var(--border_color);
- margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--border_color);
+    margin: 0;
+    margin-top: 16px;
  }
+
+
+
+.footer-social {
+    margin-left: 120px;
+    display: flex;
+}
+
+
  
+.social-header {
+    font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
+}
+
+
+.social-item {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.social-item:hover {
+    background-color: var(--green-color) ;
+}
+
+.social-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--team_color);
+}
+
+.social-list {
+    display: flex;
+}
+
+
